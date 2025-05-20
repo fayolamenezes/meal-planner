@@ -51,29 +51,25 @@ This is a fully functional React-based web application that allows users to mana
 ## Project Structure
 ## Folder Structure
 <pre> meal-planner/
-│
-├── index.html
-├── recipes.html
-├── planner.html
-├── grocery-list.html
-├── recipes.json
-│
-├── js/
-│ ├── main.js
-│ ├── recipes.js
-│ ├── planner.js
-│ └── grocery.js
-│
-├── css/
-│ ├── style.css
-│ ├── recipes.css
-│ ├── planner.css
-│ └── grocery.css
-│
-├── images/
-│ ├── cheesecake.jpg
-│ ├── brownie.jpg
-│ └── ... (more recipe images)</pre>
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── contexts/
+│   ├── hooks/
+│   ├── pages/
+│   ├── services/
+│   ├── styles/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── .gitignore
+├── LICENSE
+├── README.md
+├── package-lock.json
+└── package.json
 
 
 ---
