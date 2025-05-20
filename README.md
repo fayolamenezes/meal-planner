@@ -3,7 +3,7 @@
 This is a fully functional React-based web application that allows users to manage recipes, plan weekly meals, and generate grocery lists based on selected recipes and meal plans. The app features a responsive design and persists data using the browser’s local storage.
 
 ## 🔗 Live Site
-[View Live Demo](https://recipe-manager-rho-cyan.vercel.app/)
+[View Live Demo](https://meal-planner-henna-zeta.vercel.app/)
 
 ---
 
