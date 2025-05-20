@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Recipe and Meal Planner Web App (React Version)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a fully functional React-based web application that allows users to manage recipes, plan weekly meals, and generate grocery lists based on selected recipes and meal plans. The app features a responsive design and persists data using the browser’s local storage.
 
-## Available Scripts
+## 🔗 Live Site
+[View Live Demo](https://recipe-manager-rho-cyan.vercel.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Home Page
+- Overview of the app with navigation to all major sections.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Recipe Manager
+- Add, edit, and delete personal recipes using modals.
+- Filter recipes by category or search by name.
+- Upload and preview images for each recipe.
+- View recipe details in a modal.
+- Manage recipe categories dynamically.
+- Combines default recipes (from JSON) with user-added recipes.
 
-### `npm test`
+### 3. Meal Planner
+- Plan meals for each day of the week (Breakfast, Lunch, Dinner, Snacks).
+- Select recipes from the recipe manager for each meal.
+- Data automatically saved in local storage.
+- Export meal plans as JSON files.
+- Clear all meal plans with one click.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Grocery List
+- Generate grocery list by selecting recipes from planner or recipe manager.
+- Add custom grocery items manually.
+- Check off items as you shop.
+- Print the grocery list.
+- Clear all items easily.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React 18
+- React Hooks & Context API for state management
+- React Router for SPA navigation
+- Local Storage API for data persistence
+- CSS Modules / Custom CSS for styling
+- JSON for default recipe data
+- Vercel for deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Project Structure
+## Folder Structure
+<pre> meal-planner/
+│
+├── index.html
+├── recipes.html
+├── planner.html
+├── grocery-list.html
+├── recipes.json
+│
+├── js/
+│ ├── main.js
+│ ├── recipes.js
+│ ├── planner.js
+│ └── grocery.js
+│
+├── css/
+│ ├── style.css
+│ ├── recipes.css
+│ ├── planner.css
+│ └── grocery.css
+│
+├── images/
+│ ├── cheesecake.jpg
+│ ├── brownie.jpg
+│ └── ... (more recipe images)</pre>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git clone https://github.com/fayolamenezes/meal-planner.git
+   cd meal-planner
